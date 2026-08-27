@@ -22,8 +22,16 @@ function userFlash(btn){
     setTimeout(function(){
         btn.classList.remove("flash")
     },250)
-
 }
+
+
+// function userClick(btn){
+//     btn.classList.add("zoom");
+//     setTimeout(function(){
+//         btn.classList.remove("zoom")
+//     },250)
+// }
+
 
 function levelUp(){
     userSeq=[];
@@ -61,7 +69,7 @@ function checkAns(idx){
             document.querySelector("body").style.backgroundColor="white";
         },250);
         highestScore();
-        h4.innerText=`your highest score is:${hScore}`;
+        h4.innerText=`Your Highest Score is:${hScore}`;
         resetGame();
 
     }
@@ -88,3 +96,4 @@ function resetGame(){
     userSeq=[];
     level=0;
 }
+

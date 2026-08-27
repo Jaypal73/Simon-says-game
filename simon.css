@@ -2,17 +2,29 @@ body{
     text-align: center;
 }
 .btn{
+    display: flex;
     height: 150px;
     width: 150px;
     border-radius: 20%;
     border: 10px solid black;
     margin: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 70px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
 }
+
+.btn:active {
+    transform: scale(2);
+  }
 
 .btn-container{
     display: flex;
     justify-content: center;
-    
+    align-items: center;
 }
 .red{
     background-color: #d95980;
@@ -37,4 +49,10 @@ body{
 
 h1{
     color: blueviolet;
+    font-size: 50px;
 }
+
+h4{
+    font-size: 25px;
+}
+
